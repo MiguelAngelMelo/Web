@@ -11,7 +11,8 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background:rgb(9, 74, 136);
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
 }
 .card{
     position: relative;
