@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    /*para alinear y ajustar mejor las cartas*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:rgb(9, 74, 136);
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /*un valor de margin para separar las cartas*/
+    margin: 20px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*Determinar si la cara posterior de un elemento 
+    es visible frente al ususario
+    La cara posterior siempre es un fondo transparente, 
+    permitiendo, cuando es visible, que se muestre una imagen
+    que es reflejo
+    visible: significa que la cara posterior es visible,
+    permitiendo que la cara frontal se muestre invertida.
+    hidden: significa que la cara posterior no es visible, ocultando
+    la cara frontal*/
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
